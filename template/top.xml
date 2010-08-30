@@ -1,0 +1,7 @@
+<top>
+	<banneer/>
+	<email id="6"/>
+	<menu>
+		$menuItems;
+	</menu>
+</top>

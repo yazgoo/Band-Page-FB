@@ -1,0 +1,12 @@
+[acceuil]
+songs_played=Repertoire
+[bottom]
+telephone_abreviation=tel
+fax_abreviation=fax
+email_abreviation=courriel
+telephone_alt=mon telephone
+fax_alt=mon fax
+email_alt=courriel
+[devis]
+basic_phone_alt=telephone
+mobile_phone_alt=telephone portable

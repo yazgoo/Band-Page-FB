@@ -1,0 +1,12 @@
+<acceuil>
+	<summup>$summup</summup>
+	<status>$status</status>
+	<dates>$dates</dates>
+	<membres>$membres</membres>
+	<repertoire>
+		$repertoire
+	</repertoire>
+	<presentation>
+		$presentation
+	</presentation>
+</acceuil>

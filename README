@@ -1,0 +1,16 @@
+[ Documentation ]
+
+http://wiki.github.com/yazgoo/Band-Page-FB/
+
+[ License ]
+
+    [ Base ]
+    
+        Under GPL copyleft license (see LICENSE).
+
+    [ Third party ]
+
+        Facebook API php-sdk (modified for cache support)
+        Apache Licence, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0.html)
+        
+        

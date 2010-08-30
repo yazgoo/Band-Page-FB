@@ -1,0 +1,20 @@
+<devis>
+	<text>$text</text>
+	<contact>
+		<name>$name</name>
+		<phones>
+			<mobile>$mobilePhone</mobile>
+			<basic>$basicPhone</basic>
+		</phones>
+	</contact>
+	<result>$result</result>
+	<email-form to="$to" title="$title">
+		<field name="Etablissement" value="preciser le type"/>
+		<field name="Addresse complete"/>
+		<field name="Telehone"/>
+		<field name="Fax"/>
+		<field name="Mail"/>
+		<field name="Description de la salle" type="multi-line" value="preciser si exterieur"/>
+		<field name="Date envisagee"/>
+	</email-form>
+</devis>

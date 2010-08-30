@@ -1,0 +1,14 @@
+<bottom>
+	<band>$name</band>
+	<address>
+		<who>$userName</who>
+		<number>$number</number>
+		<street>$street</street>
+		<zip_code>$zip_code</zip_code>
+		<city>$city</city>
+		<phone_number>image/phone.php</phone_number>
+		<fax>image/fax.php</fax>
+		<email>image/email.php</email>
+	</address>
+	<url>$website</url>
+</bottom>

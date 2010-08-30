@@ -1,0 +1,15 @@
+div.song
+{
+padding: 10px;
+text-align: center;
+margin: 0 auto;
+width: 100%;
+}
+a.songName
+{
+font-size: 15px;
+display: block;
+font-family: verdana;
+font-weight: bold;
+}
+

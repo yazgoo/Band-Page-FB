@@ -1,0 +1,19 @@
+members=Membres
+trio=Trio
+audio=Audio
+videos=Videos
+devis=Devis
+album=Album
+[acceuil]
+songs_played=Songs played
+[bottom]
+telephone_abreviation=phone #
+fax_abreviation=fax
+email_abreviation=email
+telephone_alt=my phone
+fax_alt=my fax
+email_alt=my email
+[devis]
+basic_telephone_alt=phone
+mobile_phone_alt=mobile phone
+

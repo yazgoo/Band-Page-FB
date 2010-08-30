@@ -1,0 +1,6 @@
+<trio>
+	<name>$name</name>
+	<headline>$headline</headline>
+	<membres>$membres</membres>
+	<presentation>$presentation</presentation>
+</trio>
