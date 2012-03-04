@@ -1,0 +1,53 @@
+body
+{
+margin:0px;
+margin-top: 50px;
+padding:0px;
+overflow: hidden;
+}
+div.container
+{
+margin:0 auto;
+width: 850px;
+margin:0 auto;width: 200px;
+}
+.site
+{
+margin:0 auto;
+width: 850px;
+}
+div.banneer
+{
+width: 775px;
+height: 140px;
+background-image: url(../../image/banneer.jpg);
+display: inline-block;
+}
+div.email
+{
+width: 63px;
+height: 63px;
+background-image: url(../../image/$.jpg);
+display: inline-block;
+}
+div.menu
+{
+height: 50px;
+background-image: url(../../image/menuBackground.png);
+border: solid 1px black;
+vertical-align: middle;
+width: 700px;
+height: 25px;
+border-radius: 5px;
+moz-border-radius: 5px;
+}
+a.item
+{
+font-family: Arial;
+padding-left: 10px;
+padding-right: 10px;
+border-left: solid 1px black;
+font-weight: bold;
+text-decoration: none;
+color: #675d76; 
+}

@@ -22,6 +22,7 @@ if (!function_exists('curl_init')) {
 	}
 	function curl_exec($ch)
 	{
+		/*
 		$cmd = "curl "
 		."--connect-timeout ".$ch->options[CURLOPT_CONNECTTIMEOUT]." "
 		//."--timeout ".$ch->options[CURLOPT_TIMEOUT]." "
@@ -34,6 +35,12 @@ if (!function_exists('curl_init')) {
 		exec($cmd, $o);
 		$result = implode(" ", $o);
 		return $result;
+		 */
+		$fp = fopen($ch->options[CURLOPT_URL]. "?" . $ch->options[CURLOPT_POSTFIELDS], 'rb');
+		if(!$fp) throw new Exception("Problem with $url, $php_errormsg");
+		$response = @stream_get_contents($fp);
+		if ($response === false) return null;
+		return $response;
 	}
 }
 function cached_curl_exec($ch)

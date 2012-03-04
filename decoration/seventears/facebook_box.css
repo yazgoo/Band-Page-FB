@@ -1,0 +1,10 @@
+.facebook_box
+{
+    border:none;
+    overflow:hidden;
+    width:292px;
+    height: 260px;
+    position: fixed;
+    right : 0;
+    bottom: 0;
+}

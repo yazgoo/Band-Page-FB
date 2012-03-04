@@ -1,0 +1,4 @@
+<musicPlayer>
+	<songs>$songs</songs>
+	<config>$config</config>
+</musicPlayer>

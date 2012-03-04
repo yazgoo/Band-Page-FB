@@ -3,10 +3,14 @@ class Cache
 {
 	static $root = "cache/";
 	static $index = "cache/index";
+    static function touch()
+    {
+		if(!file_exists(Cache::$index)) touch(Cache::$index);
+    }
 	static function getModificationTime($id)
 	{
 		$id .= "\n";
-		if(!file_exists(Cache::$index)) touch(Cache::$index);
+        Cache::touch();
 		$file_array = file(Cache::$index);
 		foreach($file_array as $line_number=>$line)
 			if($line == $id)
@@ -16,7 +20,7 @@ class Cache
 	static function get($id)
 	{
 		$id .= "\n";
-		if(!file_exists(Cache::$index)) touch(Cache::$index);
+        Cache::touch();
 		$file_array = file(Cache::$index);
 		foreach($file_array as $line_number=>$line)
 			if($line == $id)
@@ -26,7 +30,7 @@ class Cache
 	static function set($id, $content)
 	{
 		$id .= "\n";
-		if(!file_exists(Cache::$index)) touch(Cache::$index);
+        Cache::touch();
 		$file_array = file(Cache::$index);
 		$line_number = -1;
 		foreach($file_array as $line_number=>$line)

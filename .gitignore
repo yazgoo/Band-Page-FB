@@ -1,0 +1,4 @@
+*.swp
+etc/accounts.conf
+etc/private.conf
+cache/*

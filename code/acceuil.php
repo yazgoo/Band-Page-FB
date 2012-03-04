@@ -16,8 +16,13 @@ function b($lineFeededString)
 	return implode("\n", $result);
 }
 $dates = "<title>Tour Trio Blues Rock SEVENTIES</title>";
+$i = 0;
 foreach(Query::getEvents() as $date)
+{
 	$dates .= "<date>$date</date>";
+    $i++;
+    if($i > 0) break;
+}
 $status = Query::getCurrentLocation();
 $summup = Query::getPressContact();
 $repertoire = line(b(Query::getInfluences()));

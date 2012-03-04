@@ -1,0 +1,65 @@
+div.text
+{
+width: 400px;
+margin-top: 20px;
+font-family: Arial;
+font-size: 13px;
+}
+div.result
+{
+width: 100%;
+margin: 10px;
+padding: 3px;
+font-family: Arial;
+font-size: 13px;
+border: 1px solid black;
+}
+div.contact
+{
+margin-bottom: 20px;
+font-family: Arial;
+font-size: 13px;
+}
+a.fieldName
+{
+margin: 1px;
+margin-right: 0px;
+padding-left: 3px;
+padding-bottom: 1px;
+font-family: Arial;
+font-size: 13px;
+float: left;
+width: 150px;
+background-color: #cdffcc;
+border: 1px solid #2e442f;
+border-right: #cdffcc;
+}
+input.fieldText
+{
+margin: 1px;
+margin-left: 0px;
+font-family: Arial;
+font-size: 13px;
+border: 1px solid #2e442f;
+width: 200px;
+height: 18px;
+}
+textarea.fieldMultiLine
+{
+position: relative;
+top: -1px;
+font-family: Arial;
+font-size: 13px;
+border: 1px solid #2e442f;
+width: 200px;
+}
+div.form
+{
+background-color: #c5c7d3;
+width: 360px;
+margin: auto;
+padding: 3px;
+border: 1px solid #7c7b89;
+border-radius: 5px;
+moz-border-radius: 5px;
+}

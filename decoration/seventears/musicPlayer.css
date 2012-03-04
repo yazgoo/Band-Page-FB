@@ -1,0 +1,45 @@
+#musicPlayer
+{
+	position: fixed;
+	left : 0;
+    bottom: 0;
+    background-color: #333333;
+    color: #675d76;
+}
+#musicPlayerDimension
+{
+    z-index: 0;
+    height: 100px;
+    width: 300px;
+}
+#musicPlayerButton
+{
+    position: fixed;
+    bottom: -1000px;
+    background-color: #675d76;
+    color: #675d76;
+}
+#musicPlayerSlider
+{
+    background-color: #675d76;
+    color: #675d76;
+}
+#musicPlayerSliderHover
+{
+    color: #675d76;
+}
+#musicPlayerScrollBar
+{
+    background-color: #675d76;
+    color: #675d76;
+}
+#musicPlayerPlaylist
+{
+    background-color: #eeeeee;
+    color: #000000;
+}
+#musicPlayerBackgroundGradient
+{
+    background-color: #ffffff;
+    color: #ffe30a;
+}

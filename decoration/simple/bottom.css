@@ -1,0 +1,23 @@
+div.bottom
+{
+position: fixed;
+z-index: 1;
+margin-top: 100px;
+font-family: arial;
+font-size: 12px;
+background-color: #eeeeee; 
+color: #675d76; 
+border-top: solid 1px #675d76;
+width: 100%;
+left: 0;
+bottom: -25px;
+text-align: center;
+transition: all 1s ease-in-out;
+}
+div.bottom:hover
+{
+-webkit-transform: translate(0px, -25px);
+-moz-transform: translate(0px, -25px);
+-ms-transform: translate(0px, -25px);
+transform: translate(0px, -25px);
+}

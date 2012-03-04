@@ -3,6 +3,7 @@ require_once 'library/query/query.php';
 $albums = "";
 foreach(Query::getAlbums() as $album)
 {
+    if($album["name"] == "Profile Pictures") continue;
 	$albums .= "<album name=\"{$album["name"]}\">";
 	foreach($album["photos"] as $photo)
 	{

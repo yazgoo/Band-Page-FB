@@ -8,10 +8,12 @@
 		<div class="summup">
 			<xsl:value-of select="summup"/>
 		</div>
+        <!--
 		<div class="status">
 			<xsl:value-of select="status"/>
 		</div>
-		<div class="dates">
+        -->
+		<div class="status">
 			<xsl:apply-templates select="dates"/>
 		</div>
 		<div class="membres">
@@ -26,9 +28,11 @@
 		</div>
 	</xsl:template>
 	<xsl:template match="dates">
+        <!--
 			<div class="datesTitle">
 				<xsl:value-of select="title"/>
 			</div>
+            -->
 			<xsl:apply-templates select="date"/>
 	</xsl:template>
 	<xsl:template match="date">

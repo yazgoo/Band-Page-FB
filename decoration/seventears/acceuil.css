@@ -1,0 +1,56 @@
+@import url("members.css");
+div.summup
+{
+font-family: Impact;
+font-size: 20px;
+font-weight: bold;
+width: 140px;
+height: 107px;
+background-image: url(../../image/notes.jpg);
+display: inline-block;
+}
+div.dates
+{
+display: inline-block;
+font-family: Arial;
+font-size: 16px;
+text-align: center;
+}
+div.status
+{
+display: inline-block;
+padding: 10px;
+font-family: Arial;
+font-size: 15px;
+width: 261px;
+height: 66px;
+margin-top:30px;
+background-image: url(../../image/frame.png);
+}
+div.datesTitle
+{
+font-family: Arial;
+font-size: 20px;
+color: white;
+text-align: center;
+padding-top: 15px;
+width: 332px;
+height: 46px;
+background-image: url(../../image/button.png);
+}
+div.repertoire
+{
+font-family: verdana;
+font-size: 15px;
+width: 670px;
+}
+div.presentation
+{
+font-family: verdana;
+font-size: 15px;
+width: 670px;
+}
+a.repertoireTitle
+{
+text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+div.albumNameContainer
+{
+position: absolute;
+}
+a.albumName
+{
+background-color: #eeeeee;
+position: relative;
+z-index: 2;
+border-top: solid 1px #eeeeee;
+color: #675d76;
+font-family: arial;
+padding-left: 5px;
+padding-right: 5px;
+border-right: solid 1px #675d76;
+}
+div.caption
+{
+position: relative;
+display: inline-block;
+}
+a.caption
+{
+position: absolute;
+left: -100px;
+top: 90px;
+font-size: 9px;
+background-color: #D7DF01;
+border-left: 1px solid #333333;
+border-bottom: 1px solid #333333;
+padding-left: 2px;
+padding-right: 2px;
+font-family: arial;
+}
+div.album
+{
+background-color: #eeeeee;
+padding: 30px;
+overflow: hidden;
+white-space:nowrap;
+width: 100%;
+height: 120px;
+margin-bottom:30px;
+border: solid 1px #675d76;
+border-top: 0;
+border-left: 0;
+}
+img.photo
+{
+border: solid 5px white;
+margin: 5px;
+vertical-align: top;
+}
+img.photo:hover
+{
+opacity: 0.8;
+filter: alpha(opacity=80);
+}
+img.loader
+{
+position:relative;
+left:-21px;
+visibility:hidden
+}

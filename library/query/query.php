@@ -2,12 +2,13 @@
 require 'facebook/facebook.php';
 require_once 'library/conf.php';
 $conf = Conf::getInstance("main");
+$accounts = Conf::getInstance("accounts");
 Query::$facebook = new Facebook(array(
-			'appId'  => $conf->get("facebook", "appId"),
-			'secret' => $conf->get("facebook", "secret"),
+			'appId'  => $accounts->get("facebook", "appId"),
+			'secret' => $accounts->get("facebook", "secret"),
 			'cookie' => true, // enable optional cookie support
 			));
-Query::$pageId = $conf->get("facebook", "pageId");
+Query::$pageId = $accounts->get("facebook", "pageId");
 class Query
 {
 static $facebook;
@@ -54,13 +55,13 @@ static function getEvents()
 	foreach(Query::getEventsIds() as $id)
 	{
 		$event = Query::getObject("", $id);
-		$time = strtotime($event["start_time"]);
+		$time = strtotime($event["start_time"]) - 32400; // temporary correction
 		// TODO internationalize
 		$months = array("Janvier", "Fevrier", "Mars", "Avril", "Mai", "Juin", "Juillet", "Aout", "Septembre", "Octobre", "Novembre");
 		$i = 0+strftime("%m", $time)-1;
 		$month = $months[$i];
 		array_push($result, 
-				strftime("%e $month %G %HH%M", $time)." ".$event["location"]);
+				strftime("%e $month %G %Hh%M", $time)." ".$event["location"]);
 	}
 	return $result;
 }

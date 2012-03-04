@@ -17,8 +17,18 @@
 				loader = document.getElementById(src+"-loader");
 				loader.style.visibility = "visible";
 			}
-			var myEvent;
-			function scroll()
+		</script>
+            <a class="albumName"><xsl:value-of select="@name"/></a>
+		<div class="album">
+			<xsl:attribute name="id">
+				<xsl:value-of select="@name"/>
+			</xsl:attribute>
+			<div class="photos">
+				<xsl:apply-templates select="photo"/>
+			</div>
+		<script language="javascript">
+			var myEvent_;
+            function scroll_<xsl:value-of select="position()"/>()
 			{
 				e = myEvent;
 				element = document.getElementById("<xsl:value-of select="@name"/>");
@@ -43,30 +53,20 @@
 				element.scrollLeft += px * 50;
 			}
 			var timeoutId = 0;
-			function launchScroll(e)
+			function launchScroll_<xsl:value-of select="position()"/>(e)
 			{
-				stopScroll()
+				stopScroll_<xsl:value-of select="position()"/>()
 				myEvent = e;
-				timeoutId = setInterval("scroll()", 50)
+				timeoutId = setInterval("scroll_<xsl:value-of select="position()"/>()", 50)
 			}
-			function stopScroll(e)
+			function stopScroll_<xsl:value-of select="position()"/>()
 			{
 				clearInterval(timeoutId)
 			}
-		</script>
-		<a class="albumName"><xsl:value-of select="@name"/></a>
-		<div class="album">
-			<xsl:attribute name="id">
-				<xsl:value-of select="@name"/>
-			</xsl:attribute>
-			<div class="photos">
-				<xsl:apply-templates select="photo"/>
-			</div>
-		<script language="javascript">
 			element = document.getElementById("<xsl:value-of select="@name"/>");
-			element.onmouseover = launchScroll;
+			element.onmouseover = launchScroll_<xsl:value-of select="position()"/>
 			if (element.captureEvents) element.captureEvents(Event.MOUSEOVER);
-			element.onmouseout = stopScroll;
+			element.onmouseout = stopScroll_<xsl:value-of select="position()"/>
 			if (element.captureEvents) element.captureEvents(Event.MOUSEOUT);
 		</script>
 		</div>
@@ -84,10 +84,10 @@
 			</xsl:attribute>
 			<xsl:attribute name="style">
 				 
-	-moz-transform:rotate(<xsl:value-of select="@rand"/>deg);
+-moz-transform:rotate(<xsl:value-of select="@rand"/>deg);
 	-webkit-transform:rotate(<xsl:value-of select="@rand"/>deg);
 	-o-transform:rotate(<xsl:value-of select="@rand"/>deg);
-	-ms-transform:rotate(<xsl:value-of select="@rand"/>deg);
+    -ms-transform:rotate(<xsl:value-of select="@rand"/>deg);
 			</xsl:attribute>
 		</img>
 		<xsl:if test="@description!=''">

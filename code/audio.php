@@ -1,5 +1,4 @@
 <?
-
 require_once 'library/query/query.php';
 $songs = "";
 foreach(Query::getMusic() as $item)

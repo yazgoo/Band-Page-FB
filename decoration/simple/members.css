@@ -1,0 +1,9 @@
+div.membre
+{
+display: inline-block;
+font-family: arial;
+font-size: 13px;
+font-weight: bold;
+font-style: italic;
+text-align: center;
+}
